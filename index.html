@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+
+</head>
+<body>
+
+ <h2>Topic Feedback Survey</h2>
+
+    <!-- Text input for short answer -->
+    <div class="form-group">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required >
+    </div>
+
+    <!-- Textarea for longer answer -->
+    <div class="form-group">
+      <label for="comments">Your Thoughts:</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Share your thoughts..."></textarea>
+    </div>
+
+    <!-- Multiple choice using radio buttons -->
+    <div class="form-group">
+      <label>How did you hear about us?</label><br>
+      <input type="radio" name="source" value="internet" id="internet">
+      <label for="internet">Internet</label><br>
+      <input type="radio" name="source" value="friend" id="friend">
+      <label for="friend">Friend</label><br>
+      <input type="radio" name="source" value="ad" id="ad">
+      <label for="ad">Advertisement</label>
+    </div>
+
+    <!-- Checkbox for multiple options -->
+    <div class="form-group">
+      <label>What features do you use the most? (Select all that apply)</label><br>
+      <input type="checkbox" name="features" value="search" id="search">
+      <label for="search">Search</label><br>
+      <input type="checkbox" name="features" value="profile" id="profile">
+      <label for="profile">Profile</label><br>
+      <input type="checkbox" name="features" value="settings" id="settings">
+      <label for="settings">Settings</label>
+    </div>
+
+    <!-- Dropdown menu -->
+    <div class="form-group">
+      <label for="topic">Which topic interests you the most?</label><br>
+      <select id="topic" name="topic">
+        <option value="technology">Technology</option>
+        <option value="health">Health</option>
+        <option value="finance">Finance</option>
+        <option value="education">Education</option>
+      </select>
+    </div>
+
+    <!-- Rating scale (1-5) -->
+    <div class="form-group">
+      <label>Rate your overall satisfaction:</label><br>
+      <label><input type="radio" name="satisfaction" value="1"> 1</label>
+      <label><input type="radio" name="satisfaction" value="2"> 2</label>
+      <label><input type="radio" name="satisfaction" value="3"> 3</label>
+      <label><input type="radio" name="satisfaction" value="4"> 4</label>
+      <label><input type="radio" name="satisfaction" value="5"> 5</label>
+    </div>
+
+    <!-- Submit button -->
+    <div class="form-group">
+      <button type="submit">Submit Feedback</button>
+    </div>
+  </form>
+
+</body>
+</html>
+
+
